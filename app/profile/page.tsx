@@ -7,7 +7,7 @@ const Profile = () => {
   return (
     <AuthCheckProvider>
       <div>
-        <h1 className='text-lg text-center'>User Profile</h1>
+        <h1 className="text-lg text-center">User Profile</h1>
         <ProfileComponent />
       </div>
     </AuthCheckProvider>

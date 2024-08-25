@@ -18,7 +18,7 @@ const NavBar = () => {
     });
   };
   return (
-    <div className='font-roboto text-black flex justify-evenly pb-5'>
+    <div className="font-roboto text-black flex justify-evenly pb-5">
       <Link href={'/'}>Main Page</Link>
       {!isLoggedIn && <Link href={'/register'}>Regsiter</Link>}
       {!isLoggedIn && <Link href={'/login'}>Login</Link>}

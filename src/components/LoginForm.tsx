@@ -43,12 +43,12 @@ const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='max-w-md mx-auto p-4'>
+    <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto p-4">
       <div>
-        <label htmlFor='username'>Username</label>
+        <label htmlFor="username">Username</label>
         <input
-          id='username'
-          type='username'
+          id="username"
+          type="username"
           {...register('username', {
             required: 'Username is required',
             pattern: {
@@ -56,18 +56,18 @@ const LoginForm = () => {
               message: 'Invalid username address',
             },
           })}
-          className='border p-2 w-full'
+          className="border p-2 w-full"
         />
         {errors.username && (
-          <span className='text-red-600'>{errors.username.message}</span>
+          <span className="text-red-600">{errors.username.message}</span>
         )}
       </div>
 
       <div>
-        <label htmlFor='password'>Password</label>
+        <label htmlFor="password">Password</label>
         <input
-          id='password'
-          type='password'
+          id="password"
+          type="password"
           {...register('password', {
             required: 'Password is required',
             minLength: {
@@ -75,15 +75,15 @@ const LoginForm = () => {
               message: 'Password must be at least 6 characters long',
             },
           })}
-          className='border p-2 w-full'
+          className="border p-2 w-full"
         />
         {errors.password && (
-          <span className='text-red-600'>{errors.password.message}</span>
+          <span className="text-red-600">{errors.password.message}</span>
         )}
       </div>
 
-      <div className='mt-4'>
-        <button type='submit' className='bg-blue-500 text-white p-2 w-full'>
+      <div className="mt-4">
+        <button type="submit" className="bg-blue-500 text-white p-2 w-full">
           Login
         </button>
       </div>

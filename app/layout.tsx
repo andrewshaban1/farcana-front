@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <AuthProvider>
         <body className={cn(roboto.className, 'p-5')}>
           <NotificationProvider>
